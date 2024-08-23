@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.11f1
+CRC: 1644072411
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 57fe2f6b937bcbd616731bf9c7269e0c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 24cc7d1f0cb616d53c6fd11511c8af86
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Lua/Main.lua.txt
+Dependencies: []
