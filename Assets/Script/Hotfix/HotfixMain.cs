@@ -16,7 +16,7 @@ public class HotfixTest
     {
         Debug.Log(str);
     }
-
+    //热补丁的话 没有析构 可能报错
     ~HotfixTest()
     {
 
@@ -113,12 +113,6 @@ public class HotfixMain : MonoBehaviour
     private void TestTest()
     {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator TestCoroutine()

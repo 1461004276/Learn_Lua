@@ -58,10 +58,11 @@ public class Lesson3
 
 #region 拓展方法
 
-//想要在Lua中使用拓展方法 一定要在工具类前面加上特定
+//想要在Lua中使用拓展方法 一定要在工具类前面加上特性
 //建议 Lua中要使用的类 都加上该特性 可以提升性能
 //如果不加该特性 除了拓展方法对应的类 其它类的使用 都不会报错
 //但是lua是通过反射的机制去调用的C#类  效率较低
+//加上后要和之前CsharpCallLua中的方法一样要在unity的xlua生成代码
 [LuaCallCSharp]
 public static class Tools
 {
@@ -201,6 +202,7 @@ public static class Lesson9
 
 public static class Lesson10
 {
+    // 通过list 为系统库或第三方库添加特性 注意 要在静态类中 同时写完一定要生成代码
     [CSharpCallLua]
     public static List<Type> csharpCallLuaList = new List<Type>() {
         typeof(UnityAction<float>),
@@ -259,15 +261,5 @@ public class Lesson12
 
 public class LuaCallCSharp : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -11,7 +11,7 @@ local obj = Lesson5()
 --a 相当于 函数返回值
 --b 第一个ref
 --c 第二个ref
-local a,b,c = obj:RefFun(1, 0, 0, 1)
+local a,b,c = obj:RefFun(1, 0, 0, 1) -- 不传递占位符 会默认传递0
 print(a)
 print(b)
 print(c)

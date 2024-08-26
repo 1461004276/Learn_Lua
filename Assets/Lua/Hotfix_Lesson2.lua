@@ -15,10 +15,10 @@ print("*********多函数替换***********")
 	--	print(a)
 	--end
 --})
-
+-- 未继承MonoBehaviour的类
 xlua.hotfix(CS.HotfixTest, {
 	--构造函数 热补丁固定写法[".ctor"]！！！！
-	--他们和别的函数不同 不是替换 是先调用原逻辑 再调用lua逻辑
+	--他们和别的函数不同 不是替换 是先调用原逻辑 再调用lua逻辑 （不是覆盖）
 	[".ctor"] = function()
 		print("Lua热补丁构造函数")
 	end,

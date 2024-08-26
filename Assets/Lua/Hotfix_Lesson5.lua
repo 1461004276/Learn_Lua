@@ -2,7 +2,7 @@ print("*********事件加减替换***********")
 
 
 xlua.hotfix(CS.HotfixMain, {
-	--add_事件名 代表着时间加操作
+	--add_事件名 代表着事件加操作
 	--remove_事件名 减操作
 	add_myEvent = function(self, del)
 		print(del)
